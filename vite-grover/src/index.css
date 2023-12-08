@@ -1,18 +1,36 @@
 @import "./assets/css/variables.css";
+@import "./assets/css/hero-section.css";
 
 :root {
   font-family: var(--primary-font);
   font-weight: var(--fw-400);
 
-  color-scheme: light dark;
+  /*color-scheme: light dark;
   color: var(--soft-shadow);
+  */
   background-color: var(--react-black);
 
-
-  font-synthesis: none;
+  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.grover-logo {
+  display: flex;
+  align-items: center;
+  height: var(--space-48);
+  gap: var(--space-8);
+}
+.grover-logo h2 {
+  font-weight: var(--fw-700);
+}
+
+input {
+  fill: var(--white);
+  border: none;
+  border-right: solid var(--space-2) var(--white-smoke);
+  filter: var(--drop-shadow);
 }
 
 a {
@@ -27,6 +45,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+
   min-height: 100vh;
   min-height: 100dvh;
 
@@ -37,6 +56,10 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+li {
+  list-style: none;
 }
 
 button {

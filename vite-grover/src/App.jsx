@@ -1,10 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import "./assets/scripts/hamburger.js"
+import hamburgerComponent from "./assets/scripts/hamburger.jsx"
 import * as images from "./image-paths.js";
+
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const navigatorMenuRef = useRef(null);
+  const hamburgerBtnRef = useRef(null);
+  const isOnMobile = window.innerWidth <= 768;
+
+  useEffect(() => {
+    const handleHamburgerClick = () => {
+      navigatorMenuRef.current.classList.toggle("active");
+    };
+
+    if (navigatorMenuRef.current && hamburgerBtnRef.current) {
+      hamburgerBtnRef.current.addEventListener("click", handleHamburgerClick);
+    }
+
+    return () => {
+      if (hamburgerBtnRef.current) {
+        hamburgerBtnRef.current.removeEventListener("click", handleHamburgerClick);
+      }
+    };
+  }, [isOnMobile]);
 
   return (
     <>
@@ -12,10 +33,10 @@ function App() {
         <header className="hero-header">
           <nav className="hero-header-navigator">
             <div className="grover-logo hamburger">
-              <img id="hamburger-btn" src={images.groverLogo} alt="Grover" />
+              <img id="hamburger-btn" src={images.groverLogo} alt="Grover" ref={hamburgerBtnRef} />
               <h2>Grover</h2>
             </div>
-            <ul className="hero-navigator-menu">
+            <ul className="hero-navigator-menu" ref={navigatorMenuRef}>
               <li className="nav-item">Home</li>
               <li className="nav-item">Menu</li>
               <li className="nav-item">Service</li>
@@ -30,7 +51,6 @@ function App() {
           </nav>
         </header>
       </main>
-      <script src="./scripts/hamburger.js"></script>
     </>
   );
 }

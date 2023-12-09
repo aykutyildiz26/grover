@@ -70,4 +70,6 @@
   --soft-shadow: rgba(255, 255, 255, 0.87);
   --drop-shadow: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.04));
   
+    /* Opacity */
+    --opacity-30:blur(30px);;
 }

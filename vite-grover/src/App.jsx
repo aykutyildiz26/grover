@@ -1,34 +1,16 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
-import hamburgerComponent from "./assets/scripts/hamburger.jsx"
+import HamburgerComponent from "./assets/scripts/hamburger.jsx";
 import * as images from "./image-paths.js";
-
 
 function App() {
   const [count, setCount] = useState(0);
-
   const navigatorMenuRef = useRef(null);
   const hamburgerBtnRef = useRef(null);
-  const isOnMobile = window.innerWidth <= 768;
-
-  useEffect(() => {
-    const handleHamburgerClick = () => {
-      navigatorMenuRef.current.classList.toggle("active");
-    };
-
-    if (navigatorMenuRef.current && hamburgerBtnRef.current) {
-      hamburgerBtnRef.current.addEventListener("click", handleHamburgerClick);
-    }
-
-    return () => {
-      if (hamburgerBtnRef.current) {
-        hamburgerBtnRef.current.removeEventListener("click", handleHamburgerClick);
-      }
-    };
-  }, [isOnMobile]);
 
   return (
     <>
+      <HamburgerComponent navigatorMenuRef={navigatorMenuRef} hamburgerBtnRef={hamburgerBtnRef} />
       <main>
         <header className="hero-header">
           <nav className="hero-header-navigator">

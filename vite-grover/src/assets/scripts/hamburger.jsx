@@ -1,19 +1,12 @@
-// hamburger.jsx
-
 import React, { useEffect, useRef } from "react";
 
-function HamburgerComponent() {
-  const navigatorMenuRef = useRef(null);
-  const hamburgerBtnRef = useRef(null);
-  const isOnMobile = window.innerWidth <= 768;
-
+function HamburgerComponent({ navigatorMenuRef, hamburgerBtnRef }) {
   useEffect(() => {
     const handleHamburgerClick = () => {
       navigatorMenuRef.current.classList.toggle("active");
-      console.log("activated");
     };
 
-    if (isOnMobile && navigatorMenuRef.current && hamburgerBtnRef.current) {
+    if (navigatorMenuRef.current && hamburgerBtnRef.current) {
       hamburgerBtnRef.current.addEventListener("click", handleHamburgerClick);
     }
 
@@ -22,21 +15,9 @@ function HamburgerComponent() {
         hamburgerBtnRef.current.removeEventListener("click", handleHamburgerClick);
       }
     };
-  }, [isOnMobile]);
+  }, [navigatorMenuRef, hamburgerBtnRef]);
 
   return null;
 }
 
 export default HamburgerComponent;
-
-
-
-/*
-document.addEventListener("DOMContentLoaded", function () {
-    
-});
-*/
-
-
-
-  /*hamburgerBtn.style.cursor = "pointer";*/

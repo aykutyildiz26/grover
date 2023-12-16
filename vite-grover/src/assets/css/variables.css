@@ -6,8 +6,12 @@
   --black: #0b0d17;
   --white: #ffffff;
   --gray: #969bab;
+  --smoke: #676767;
   --white-smoke: #f1f1f1;
   --red: #F55253;
+  --red-2: #F86061;
+  --light-pink: #FDECEC;
+  --tangerine: #FFA610;
 
 
     /* typography */
@@ -50,6 +54,7 @@
   --space-20: 20px;
   --space-24: 24px;
   --space-26: 26px;
+  --space-28: 28px;
   --space-30: 30px;
   --space-32: 32px;
   --space-36: 36px;
@@ -57,10 +62,13 @@
   --space-45: 45px;
   --space-48: 48px;
   --space-50: 50px;
+  --space-64: 64px;
+  --space-128: 128px;
 
   /* line-heights */
   --lh-10: 10px;
   --lh-18: 18px;
+  --lh-16: 16px;
   --lh-20: 20px;
   --lh-22: 22px;
   --lh-24: 24px;
@@ -68,7 +76,7 @@
 
     /* shadows */
   --soft-shadow: rgba(255, 255, 255, 0.87);
-  --drop-shadow: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.04));
+  --drop-shadow: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.048));
   
     /* Opacity */
     --opacity-30:blur(30px);;

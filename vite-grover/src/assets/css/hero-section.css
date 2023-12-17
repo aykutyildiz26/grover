@@ -10,8 +10,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 .hero-section{
     margin-top: var(--space-64);
     justify-content: space-around !important;
@@ -73,6 +71,7 @@
 .hero-image{
     text-align: center;
 }
+
 .hero-image-card{
     height: auto;
     background-color: var(--white);
@@ -84,6 +83,9 @@
     padding: var(--space-64) var(--space-40);
 
     animation: slideUpDown 3s infinite;
+}
+.hero-chef-logo{
+    width: 100%;
 }
 .orange-image,
 .shopping-image{
@@ -152,6 +154,62 @@
     top: 120%;
 }
 
+@media screen and (max-width: 1200px) {
+    .hero-section{
+        gap: var(--space-32);
+    }
+    .hero-image{
+        width: 38%;
+    }
+    .hero-image-card{
+        bottom: 48%;
+        left: 46%;
+        padding: var(--space-50) var(--space-32);
+    }
+    .hero-content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: var(--space-24);
+    }
+    .more-than-faster{
+        gap: var(--space-10);
+        padding: var(--space-6) var(--space-16);
+    }
+    
+    .more-than-faster-title{
+        font-size: var(--fs-14);
+        line-height: var(--lh-16);
+    }
+    .hero-content-title{
+        font-size: var(--fs-40);
+    }
+    .hero-content-description{
+        font-size: 12px;
+    }
+    .hero-image-delivary{
+        padding: var(--space-6) var(--space-24);
+    }
+    .pointer{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-content{
+        align-items: center;
+        text-align: center;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-content-buttons{
+        width: 20%;
+        gap: 10px;
+    }
+}
+
+   /* Animations */
 @keyframes slideDownUp{
     0% {
         transform: translateY(0);

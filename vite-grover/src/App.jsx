@@ -45,7 +45,6 @@ function App() {
                 <span>little as</span>
                 <span> 2 hours</span>
               </div>
-
             </h1>
             <p className="hero-content-description">
               <span>Grocen atssures fresh grocery every morning to your</span>
@@ -74,9 +73,7 @@ function App() {
               </div>
               <img className="shopping-image" src={images.shoppingIcon} alt="" />
             </div>
-
-            <img src={images.chef1} alt="Chef with vegetables" />
-            
+            <img className="hero-chef-logo" src={images.chef1} alt="Chef with vegetables" />
             <div className="hero-image-delivary">
               <img src={images.alarmClockIcon} alt="clock" />
               <div className="delivary-title">

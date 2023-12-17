@@ -46,7 +46,10 @@
 
   /* spacing */
   --space-2: 2px;
+  --space-4: 4px;
   --space-8: 8px;
+  --space-6: 6px;
+  --space-10: 10px;
   --space-12: 12px;
   --space-15: 15px;
   --space-16: 16px;
@@ -67,8 +70,9 @@
 
   /* line-heights */
   --lh-10: 10px;
-  --lh-18: 18px;
+  --lh-14: 14px;
   --lh-16: 16px;
+  --lh-18: 18px;
   --lh-20: 20px;
   --lh-22: 22px;
   --lh-24: 24px;

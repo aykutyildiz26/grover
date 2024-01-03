@@ -1,0 +1,234 @@
+.hero-section,
+.hero-image,
+.more-than-faster,
+.hero-content-buttons,
+.hero-order-process,
+.card-info,
+.card-info-title,
+.hero-image-delivary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section {
+  margin-top: var(--space-64);
+  justify-content: space-around !important;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--space-36);
+}
+.more-than-faster {
+  flex-direction: row;
+  gap: var(--space-12);
+  padding: var(--space-8) var(--space-20);
+  border-radius: var(--space-24);
+  background-color: var(--light-pink);
+}
+
+.more-than-faster-title {
+  color: var(--red);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+  line-height: var(--lh-16);
+}
+.hero-content-title,
+.content-title-container {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.hero-content-title {
+  flex-direction: column;
+}
+.content-title-container {
+  white-space: nowrap;
+}
+.content-title-container :nth-last-child(1) {
+  color: var(--red);
+}
+.hero-content-description {
+  display: flex;
+  color: var(--smoke);
+  flex-direction: column;
+}
+
+.hero-content-buttons {
+  margin-top: var(--space-24);
+  gap: var(--space-32);
+}
+.hero-order-process {
+  gap: var(--space-16);
+}
+.hero-order-process img {
+  cursor: pointer;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.hero-image-card {
+  height: auto;
+  background-color: var(--white);
+  border-radius: var(--space-8);
+  filter: var(--drop-shadow);
+  position: absolute;
+  bottom: 43%;
+  left: 51%;
+  padding: var(--space-64) var(--space-40);
+
+  animation: slideUpDown 3s infinite;
+}
+.hero-chef-logo {
+  width: 100%;
+}
+.orange-image,
+.shopping-image {
+  position: absolute;
+}
+.orange-image {
+  bottom: 54%;
+  right: 10%;
+}
+.shopping-image {
+  cursor: pointer;
+  top: 69%;
+  right: 16%;
+}
+.card-info {
+  flex-direction: column;
+  gap: 12px;
+}
+.card-info-title {
+  flex-direction: column;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-600);
+}
+.card-info-price {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-info-price :nth-child(2) {
+  color: var(--gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--fw-500);
+  line-height: 10px;
+}
+
+.rectangle {
+  background-color: var(--tangerine);
+  border-radius: 1px;
+  flex-shrink: 0;
+  width: var(--space-20);
+  height: 2px;
+}
+
+.hero-image-delivary {
+  position: absolute;
+  top: 30%;
+  left: 78%;
+  padding: var(--space-8) var(--space-28);
+  background-color: var(--white);
+  border-radius: var(--space-8);
+  filter: var(--drop-shadow);
+  gap: var(--space-24);
+  text-align: start;
+  animation: slideDownUp 3s infinite;
+}
+.delivary-title :nth-child(1) {
+  font-family: var(--fw-600);
+  font-size: var(--fs-16);
+}
+.delivary-title :nth-child(2) {
+  color: var(--gray);
+}
+.pointer {
+  position: absolute;
+  top: 120%;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-section {
+    gap: var(--space-32);
+  }
+  .hero-image {
+    width: 38%;
+  }
+  .hero-image-card {
+    bottom: 48%;
+    left: 46%;
+    padding: var(--space-50) var(--space-32);
+  }
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-24);
+  }
+  .more-than-faster {
+    gap: var(--space-10);
+    padding: var(--space-6) var(--space-16);
+  }
+
+  .more-than-faster-title {
+    font-size: var(--fs-14);
+    line-height: var(--lh-16);
+  }
+  .hero-content-title {
+    font-size: var(--fs-40);
+  }
+  .hero-content-description {
+    font-size: 12px;
+  }
+  .hero-image-delivary {
+    padding: var(--space-6) var(--space-24);
+  }
+  .pointer {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-content-buttons {
+    width: 20%;
+    gap: 10px;
+  }
+}
+
+/* Animations */
+@keyframes slideDownUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px); /* Yavaşça yukarı kaydırma */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px); /* Yavaşça yukarı kaydırma */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useRef } from "react";
 
 function HamburgerComponent({ navigatorMenuRef, hamburgerBtnRef }) {
@@ -21,3 +22,4 @@ function HamburgerComponent({ navigatorMenuRef, hamburgerBtnRef }) {
 }
 
 export default HamburgerComponent;
+*/

@@ -68,17 +68,18 @@
 }
 
 .hero-image {
+  position: relative;
   text-align: center;
 }
 
 .hero-image-card {
-  height: auto;
+  position: absolute;
   background-color: var(--white);
   border-radius: var(--space-8);
   filter: var(--drop-shadow);
   position: absolute;
-  bottom: 43%;
-  left: 51%;
+  bottom: 40%;
+  left: -30%;
   padding: var(--space-64) var(--space-40);
 
   animation: slideUpDown 3s infinite;
@@ -96,8 +97,8 @@
 }
 .shopping-image {
   cursor: pointer;
-  top: 69%;
-  right: 16%;
+  top: 70%;
+  right: 15%;
 }
 .card-info {
   flex-direction: column;
@@ -132,7 +133,7 @@
 .hero-image-delivary {
   position: absolute;
   top: 30%;
-  left: 78%;
+  left: 80%;
   padding: var(--space-8) var(--space-28);
   background-color: var(--white);
   border-radius: var(--space-8);
@@ -161,8 +162,7 @@
     width: 38%;
   }
   .hero-image-card {
-    bottom: 48%;
-    left: 46%;
+
     padding: var(--space-50) var(--space-32);
   }
   .hero-content {
@@ -189,6 +189,13 @@
   }
   .hero-image-delivary {
     padding: var(--space-6) var(--space-24);
+  }
+  .hero-chef-logo {
+    width: 80%;
+  }
+  .hero-image-delivary {
+    top: 20%;
+    left: 60%;
   }
   .pointer {
     display: none;

@@ -1,0 +1,8 @@
+.services-section{
+    background: var(--light-pink-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}

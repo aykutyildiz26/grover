@@ -11,8 +11,8 @@
   justify-content: center;
 }
 .hero-section {
-  margin-top: var(--space-64);
-  justify-content: space-around !important;
+  padding: var(--space-64) var(--space-128);
+  justify-content: space-evenly !important;
 }
 .hero-content {
   display: flex;
@@ -73,14 +73,15 @@
 }
 
 .hero-image-card {
-  position: absolute;
+  position: relative;
+  width: 100%;
   background-color: var(--white);
   border-radius: var(--space-8);
   filter: var(--drop-shadow);
-  position: absolute;
-  bottom: 40%;
-  left: -30%;
-  padding: var(--space-64) var(--space-40);
+  white-space: nowrap;
+  bottom: var(--space-64);
+  left: 5%;
+  padding: var(--space-64) var(--space-50);
 
   animation: slideUpDown 3s infinite;
 }
@@ -89,16 +90,17 @@
 }
 .orange-image,
 .shopping-image {
+  width: 80%;
   position: absolute;
 }
 .orange-image {
-  bottom: 54%;
+  bottom: 50%;
   right: 10%;
 }
 .shopping-image {
   cursor: pointer;
-  top: 70%;
-  right: 15%;
+  top: 60%;
+  right: 10%;
 }
 .card-info {
   flex-direction: column;
@@ -156,14 +158,12 @@
 
 @media screen and (max-width: 1200px) {
   .hero-section {
+    padding: 0 var(--space-32);
     gap: var(--space-32);
   }
-  .hero-image {
-    width: 38%;
-  }
   .hero-image-card {
+    padding: var(--space-64) var(--space-32);
 
-    padding: var(--space-50) var(--space-32);
   }
   .hero-content {
     display: flex;
@@ -191,7 +191,7 @@
     padding: var(--space-6) var(--space-24);
   }
   .hero-chef-logo {
-    width: 80%;
+    width: 60%;
   }
   .hero-image-delivary {
     top: 20%;

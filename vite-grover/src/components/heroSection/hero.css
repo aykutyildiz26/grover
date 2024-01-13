@@ -158,7 +158,7 @@
 
 @media screen and (max-width: 1200px) {
   .hero-section {
-    padding: 0 var(--space-32);
+    padding:  var(--space-128);
     gap: var(--space-32);
   }
   .hero-image-card {

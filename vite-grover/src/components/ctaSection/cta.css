@@ -1,0 +1,68 @@
+.cta-section,
+.download-our-app-container,
+.download-our-app-title-container,
+.download-our-app-title-container h2,
+.download-our-app-button-container,
+.download-our-app-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-section {
+  background: var(--light-pink-2);
+  justify-content: space-evenly !important;
+  padding: var(--space-128) var(--space-32);
+}
+.download-our-app-container,
+.download-our-app-title-container,
+.download-our-app-title-container h2 {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.cta-image {
+  animation: rotateAnimation 5s linear infinite;
+}
+.download-our-app-container {
+  gap: var(--space-32);
+}
+.download-our-app-title-container h3 {
+  color: var(--red-3);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-500);
+  line-height: var(--lh-24);
+}
+.download-our-app-title-container h2 {
+  white-space: nowrap;
+  font-size: var(--fs-40);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-54);
+}
+.download-our-app-description {
+  width: 480px;
+  color: var(--smoke);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-30);
+}
+.download-our-app-button-container {
+  width: 90%;
+  justify-content: space-between !important;
+}
+.download-our-app-button {
+  background: none;
+  color: var(--black);
+  border: var(--champagne-pink) solid 1.5px;
+  gap: var(--space-8);
+}
+
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }

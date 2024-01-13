@@ -1,44 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Pixelify+Sans:wght@500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Pixelify+Sans:wght@500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root{
-    /* colors */
-  --react-black: #242424;    
+:root {
+  /* colors */
+  --react-black: #242424;
   --black: #0b0d17;
   --white: #ffffff;
   --gray: #969bab;
+  --gray-2: #A5A4A4;
   --smoke: #676767;
   --white-smoke: #f1f1f1;
-  --red: #F55253;
-  --red-2: #F86061;
-  --red-3: #F54748;
-  --light-pink: #FDECEC;
-  --light-pink-2: #FEF5F5;
-  --tangerine: #FFA610;
+  --red: #f55253;
+  --red-2: #f86061;
+  --red-3: #f54748;
+  --light-pink: #fdecec;
+  --light-pink-2: #fef5f5;
+  --tangerine: #ffa610;
+  --green: #03a66b;
 
+  /* typography */
+  --primary-font: "Poppins", sans-serif;
+  --fs-8: 8px;
+  --fs-10: 10px;
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-28: 28px;
+  --fs-32: 32px;
+  --fs-34: 34px;
+  --fs-36: 36px;
+  --fs-38: 38px;
+  --fs-40: 40px;
+  --fs-42: 42px;
+  --fs-48: 48px;
+  --fs-72: 72px;
+  --fs-200: 200px;
+  --fs-300: 300px;
+  --fs-400: 400px;
 
-    /* typography */
-   --primary-font:'Poppins', sans-serif;
-   --fs-8: 8px;
-   --fs-10: 10px;
-   --fs-12: 12px;
-   --fs-14: 14px;
-   --fs-16: 16px;
-   --fs-18: 18px;
-   --fs-22: 22px;
-   --fs-24: 24px;
-   --fs-28: 28px;
-   --fs-32: 32px;
-   --fs-36: 36px;
-   --fs-38: 38px;
-   --fs-40: 40px;
-   --fs-42: 42px;
-   --fs-48: 48px;
-   --fs-72: 72px;
-   --fs-200: 200px;
-   --fs-300: 300px;
-   --fs-400: 400px;
-
-    /* font weights */
+  /* font weights */
+  --fw-200: 200;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -73,18 +77,23 @@
   /* line-heights */
   --lh-10: 10px;
   --lh-14: 14px;
+  --lh-12: 12px;
   --lh-16: 16px;
   --lh-18: 18px;
   --lh-20: 20px;
   --lh-22: 22px;
   --lh-24: 24px;
+  --lh-30: 30px;
+  --lh-34: 34px;
+  --lh-36: 36px;
+  --lh-48: 48px;
   --lh-54: 54px;
 
-
-    /* shadows */
+  /* shadows */
   --soft-shadow: rgba(255, 255, 255, 0.87);
   --drop-shadow: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.048));
-  
-    /* Opacity */
-    --opacity-30:blur(30px);;
+  --box-shadow: 0px 60px 100px -10px rgba(86, 0, 0, 0.08);
+
+  /* Opacity */
+  --opacity-30: blur(30px);
 }

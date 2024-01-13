@@ -5,6 +5,7 @@ import "./App.css";
 import Hero from "./components/heroSection/hero.jsx";
 import Services from "./components/servicesSection/services.jsx";
 import Features1 from "./components/features1/features1.jsx";
+import Features2 from "./components/features2/features2.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Services />
         <Features1 />
+        <Features2 />
       </main>
     </>
   );

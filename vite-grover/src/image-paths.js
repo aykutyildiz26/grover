@@ -11,6 +11,7 @@ import redRectangleBackground from "./assets/images/red-rectangle-background.svg
 import featuresImage from "./assets/images/features-image.svg";
 import courrier from "./assets/images/courrier.svg";
 import halfEllipse from "./assets/images/half-ellipse.svg";
+import mobileMockup from "./assets/images/mobile-mockup.svg";
 
 /* Icons */
 import shoppingIcon from "./assets/images/icons/shopping-icon.svg";
@@ -21,6 +22,8 @@ import iconOfTruck from "./assets/images/icons/icon-of-truck.svg";
 import iconOfGainMoney from "./assets/images/icons/icon-of-gain-money.svg";
 import iconOfSecureMessage from "./assets/images/icons/icon-of-secure-message.svg";
 import iconOfStar from "./assets/images/icons/icon-of-star.svg";
+import iconOfApple from "./assets/images/icons/icon-of-apple.svg";
+import iconOfPlaystore from "./assets/images/icons/icon-of-playstore.svg";
 
 export {
   /* Logos */
@@ -36,6 +39,7 @@ export {
   featuresImage,
   courrier,
   halfEllipse,
+  mobileMockup,
 
   /* Icons */
   shoppingIcon,
@@ -46,4 +50,6 @@ export {
   iconOfGainMoney,
   iconOfSecureMessage,
   iconOfStar,
+  iconOfApple,
+  iconOfPlaystore,
 };

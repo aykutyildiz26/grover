@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .hero-header{
+    padding: 0;
+  }
   .hamburger :nth-child(2) {
     display: none;
   }
@@ -70,7 +73,13 @@
     backdrop-filter: var(--opacity-30);
   }
   .hero-header-navigator {
-    justify-content: space-around;
+    z-index: 5;
+    position: fixed;
+    background: var(--gray-2);
+    width: 100%;
+    padding: 18px ;
+
+    justify-content: space-between;
     gap: var(--space-16);
   }
   .hero-navigator-menu.active {
@@ -78,6 +87,7 @@
     left: 0%;
   }
   .search-container {
-    gap: var(--space-4);
+    margin-right: 32px;
+    gap: 0;
   }
 }

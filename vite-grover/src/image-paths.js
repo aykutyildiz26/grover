@@ -9,6 +9,8 @@ import chef1 from "./assets/images/chef1.svg";
 import chef2 from "./assets/images/chef2.svg";
 import redRectangleBackground from "./assets/images/red-rectangle-background.svg";
 import featuresImage from "./assets/images/features-image.svg";
+import courrier from "./assets/images/courrier.svg";
+import halfEllipse from "./assets/images/half-ellipse.svg";
 
 /* Icons */
 import shoppingIcon from "./assets/images/icons/shopping-icon.svg";
@@ -32,6 +34,8 @@ export {
   chef2,
   redRectangleBackground,
   featuresImage,
+  courrier,
+  halfEllipse,
 
   /* Icons */
   shoppingIcon,

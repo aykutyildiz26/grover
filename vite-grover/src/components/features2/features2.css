@@ -1,0 +1,176 @@
+.feature-section-2,
+.home-delivery-container,
+.home-delivery-title-container,
+.home-delivery-title-container h2,
+.feature-chef-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-section-2 {
+  justify-content: space-evenly !important;
+  padding: var(--space-128) var(--space-32);
+}
+.home-delivery-container,
+.home-delivery-title-container,
+.home-delivery-title-container h2 {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-delivery-container {
+  gap: var(--space-32);
+}
+
+.home-delivery-title-container h3 {
+  color: var(--gold);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-500);
+  line-height: var(--lh-24);
+}
+.home-delivery-title-container h2 {
+  white-space: nowrap;
+  font-size: var(--fs-40);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-54);
+}
+.home-delivery-description {
+  width: 480px;
+  color: var(--smoke);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-30);
+}
+.home-delivery-container button {
+  background: none;
+  border: var(--red-2) solid 2px;
+  color: var(--red-2);
+}
+.feature-chef-container {
+  position: relative;
+  margin-right: 15%;
+}
+.feature-chef-image,
+.feature-chef-card-image {
+  width: 100%;
+}
+.feature-chef-card {
+  width: 45%;
+
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--space-12);
+  padding: var(--space-32) var(--space-24);
+  animation: slideUpDown 3s infinite;
+  gap: 12px;
+
+  left: 90%;
+  top: 20%;
+}
+
+.feature-chef-card p {
+  color: var(--smoke);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-26);
+}
+.half-ellipse {
+  position: absolute;
+  width: 12%;
+  bottom: 0;
+  left: 5%;
+
+  animation: rotate 3s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feature-section-2 {
+    padding: var(--space-64) var(--space-32);
+  }
+  .home-delivery-container {
+    gap: var(--space-32);
+  }
+
+  .home-delivery-title-container h3 {
+    font-size: var(--fs-14);
+    line-height: var(--lh-20);
+  }
+  .home-delivery-title-container h2 {
+    font-size: var(--fs-34);
+    line-height: var(--lh-48);
+  }
+  .home-delivery-description {
+    width: 380px;
+    font-size: var(--fs-14);
+    line-height: var(--lh-30);
+  }
+  .feature-chef-card h3 {
+    white-space: nowrap;
+    font-size: var(--fs-14);
+  }
+  .feature-chef-card p {
+    font-size: var(--fs-10);
+    line-height: var(--lh-18);
+  }
+  .feature-chef-container {
+    margin-right: 10%;
+  }
+  .feature-chef-card {
+    width: 40%;
+
+    padding: var(--space-32) var(--space-24);
+    gap: 12px;
+
+    left: 75%;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feature-chef-container {
+    display: none;
+  }
+  .home-delivery-container,
+  .home-delivery-title-container,
+  .home-delivery-title-container h2 {
+    align-items: center;
+    text-align: center;
+  }
+  .home-delivery-container h2 {
+    white-space: normal;
+    font-size: var(--fs-32);
+    line-height: var(--lh-36);
+  }
+  .home-delivery-container h3 {
+    font-size: var(--fs-12);
+    line-height: var(--lh-20);
+  }
+  .home-delivery-description {
+    width: 90%;
+    font-size: var(--fs-14);
+    line-height: var(--lh-24);
+  }
+}

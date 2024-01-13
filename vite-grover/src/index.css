@@ -80,7 +80,7 @@ button {
   white-space: nowrap;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--red);
 }
 button:focus,
 button:focus-visible {

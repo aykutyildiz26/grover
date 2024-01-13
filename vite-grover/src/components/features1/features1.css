@@ -52,11 +52,12 @@
 .feature-woman-title span {
   color: var(--gray-2);
   font-size: var(--fs-12);
-  font-family: var(--fw-500);
+  font-weight: var(--fw-500);
   line-height: var(--lh-12);
 }
 .feature-woman-card-bottom {
   width: 100%;
+  gap: var(--space-4);
   justify-content: space-between !important;
 }
 .feature-woman-stats {
@@ -82,7 +83,7 @@
   align-items: flex-start !important;
 }
 .why-choose-us-container {
-  gap: 32px;
+  gap: var(--space-32);
 }
 .why-choose-us-title-container h3 {
   color: var(--green);
@@ -104,16 +105,75 @@
   line-height: var(--lh-30);
 }
 
-
 @keyframes slideUpDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-25px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
-  
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feature-section-1 {
+    padding: var(--space-64) var(--space-16);
+  }
+  .feature-woman-title h3 {
+    font-size: var(--fs-14);
+  }
+  .feature-woman-point {
+    font-size: var(--fs-12);
+  }
+  .feature-woman-price {
+    font-size: var(--fs-16);
+    line-height: var(--lh-22);
+  }
+  .why-choose-us-title-container h3 {
+    font-size: var(--fs-14);
+    line-height: var(--lh-20);
+  }
+  .why-choose-us-title-container h2 {
+    white-space: nowrap;
+    font-size: var(--fs-34);
+    line-height: var(--lh-48);
+  }
+  .why-choose-us-description {
+    width: 300px;
+    font-size: var(--fs-14);
+    line-height: var(--lh-24);
+  }
+  .feature-woman-card {
+    width: 30%;
+    padding: var(--space-32) var(--space-16);
+    left: 65%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-woman-container {
+    display: none;
+  }
+  .why-choose-us-container,
+  .why-choose-us-title-container,
+  .why-choose-us-container h2 {
+    align-items: center !important;
+    text-align: center;
+  }
+  .why-choose-us-title-container h3 {
+    font-size: var(--fs-12);
+    line-height: var(--lh-20);
+  }
+  .why-choose-us-title-container h2 {
+    font-size: var(--fs-32);
+    line-height: var(--lh-36);
+  }
+  .why-choose-us-description {
+    width: 90%;
+    font-size: var(--fs-14);
+    line-height: var(--lh-24);
+  }
+}

@@ -33,7 +33,7 @@ function Footer() {
             <li className="footer-list-item">Terms & Conditions</li>
           </ul>
         </div>
-        <div className="footer-container">
+        <div className="footer-container get-in-touch">
           <h3 className="footer-title">Get in Touch</h3>
           <p className="footer-description">
             Subscribe to our weekly Newsletter and receive updates via email.
@@ -45,8 +45,8 @@ function Footer() {
           All Rights Reserved @ BESNIK 2021
         </span>
         <div className="footer-bottomside-container">
-            <span>Terms & Conditions</span>
-            <span>Privacy & Policy</span>
+          <span>Terms & Conditions</span>
+          <span>Privacy & Policy</span>
         </div>
       </div>
     </footer>

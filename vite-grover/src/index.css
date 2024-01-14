@@ -17,6 +17,7 @@
 .grover-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: var(--space-48);
   gap: var(--space-8);
 }
